@@ -1,0 +1,12 @@
+<div class="p-4">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+        <label for="first-name">Primeiro Nome: </label>
+        <input id="first-name" type="text" class="form-control mb-2" formControlName="firstName">
+      
+        <label for="last-name">Ultimo Nome: </label>
+        <input id="last-name" type="text" class="form-control mb-2" formControlName="lastName">
+
+        <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">Enviar</button>
+    </form>
+</div>

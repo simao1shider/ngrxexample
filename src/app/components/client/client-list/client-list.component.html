@@ -1,0 +1,5 @@
+<div class="p-4">
+    <ul class="list-group" *ngIf="clients$ | async as clients">
+        <li class="list-group-item" *ngFor="let client of clients">{{client.firstName}} {{client.lastName}}</li>
+    </ul>
+</div>
